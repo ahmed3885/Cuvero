@@ -1,0 +1,25 @@
+{
+  "id": "cuvero.app",
+  "name": "Cuvero",
+  "short_name": "Cuvero",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "5906754478378437892-removebg-preview.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "5906754478378437892-removebg-preview.png",
+      "sizes": "550x550",
+      "type": "image/png"
+    }
+  ]
+}

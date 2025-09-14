@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuvero - Accessories Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-container">
+    <div class="logo-section">
+      <img src="5906754478378437892-removebg-preview.png" alt="logo" class="logo-img">
+      <span class="logo-text" data-key="logo">Cuvero</span>
+    </div>
+
+    <nav class="nav-menu">
+      <button class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="nav-btn active" data-key="home"><i class="fas fa-home"></i> Home</a>
+        <a href="#" class="nav-btn" data-key="allProducts"><i class="fas fa-shopping-bag"></i> All Products</a>
+        <a href="#" class="nav-btn" data-key="phoneCases"><i class="fas fa-mobile-alt"></i> Phone Cases</a>
+        <a href="#" class="nav-btn" data-key="wallets"><i class="fas fa-wallet"></i> Wallets</a>
+        <a href="#" class="nav-btn" data-key="laptopBags"><i class="fas fa-laptop"></i> Laptop Bags</a>
+      </div>
+    </nav>
+
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+  </div>
+</header>
+
+
+<div class="custom-slider-container">
+  <button class="custom-prev">‹</button>
+  <div class="custom-slider-wrapper"></div>
+  <button class="custom-next">›</button>
+</div>
+
+
+
+<!-- Main -->
+<main>
+  <div class="container">
+    <div class="category-header">
+      <h2 id="category-title">All Products</h2>
+      <button id="back-btn" class="back-btn" style="display:none;">Back to Home</button>
+    </div>
+    <section class="products-section">
+      <div class="products-grid" id="products-grid"></div>
+    </section>
+  </div>
+</main>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h3 data-key="cart"><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+    <button class="close-cart"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total"><strong><span data-key="total">Total: </span><span id="cart-total">0</span> EGP</strong></div>
+    <button class="checkout-btn" data-key="checkout">Checkout</button>
+  </div>
+</div>
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2 data-key="logo">Cuvero</h2>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <a href="index.html" data-key="home">Home</a>
+      <a href="#" data-key="allProducts">All Products</a>
+      <a href="#" data-key="phoneCases">Phone Cases</a>
+      <a href="#" data-key="wallets">Wallets</a>
+      <a href="#" data-key="laptopBags">Laptop Bags</a>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1FHsvZJiUc/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/cuvero_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/201015767465 " target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Cuvero All rights reserved.</p>
+        <p>
+            Made by <strong>Ahmed Nabil</strong> 
+            <a href="https://wa.me/201008481678" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </p>
+     </div>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>

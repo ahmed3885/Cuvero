@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuvero-أكفة هواتف عالية الجودة</title>
+    <meta name="description" content="اكتشف مجموعة Cuvero الحصرية من أكفة الهواتف عالية الجودة. حماية متطورة مع تصاميم أنيقة وعصرية.">
+    <!-- أيقونات -->
+    <link rel="apple-touch-icon" href="5906754478378437892-removebg-preview.png">
+    <link rel="icon" sizes="200x200" href="5906754478378437892-removebg-preview.png">
+    <link rel="icon" sizes="550x550" href="5906754478378437892-removebg-preview.png">
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- اللون الرئيسي للتطبيق -->
+    <meta name="theme-color" content="#0ea5e9">
+    <link rel="icon" href="5906754478378437892-removebg-preview.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="5906754478378437892-removebg-preview.png" alt="Loading Logo" class="loading-image">
+        <div class="logo-animation">CUVERO</div>
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+    <!-- Brand Overlay -->
+    <div class="global-overlay">CUVERO</div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo-icon">
+                    <a href="cuvero.html"><img src="5906754478378437892-removebg-preview.png" alt="Cuvero-logo"></a>
+                </div>
+                <a href="cuvero.html"><span class="brand-name">Cuvero</span></a>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#products">Top Collection</a>
+                <a href="#gallery">Shop</a>
+                <a href="#contact-form">Custom Order</a>
+            </nav>
+            
+            <div class="nav-actions">
+            <button class="cart-btn" id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            </div>
+
+            <div class="cart-overlay"></div>
+
+            <div class="cart-sidebar">
+            <button class="close-cart">&times;</button>
+            <h2>Cart <i class="fas fa-shopping-cart"></i></h2>
+            <div class="cart-items"></div>
+            <div class="cart-footer">
+                <div class="cart-total">Total: <span class="total-price">0</span> EGP</div>
+                <div class="select-wrapper">
+                <select id="payment-select">
+                    <option value="الدفع عند الاستلام">Cash on Delivery</option>
+                    <option value="الدفع عن طريق محافظ الكترونية">Pay with Wallets</option>
+                </select>
+                <span class="select-arrow">&#9660;</span>
+                </div>
+                <button class="checkout-btn btn btn-primary">Checkout</button>
+            </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>C</span><span>u</span><span>v</span><span>e</span><span>r</span><span>o</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Discover <strong>Cuvero's</strong> Stylish cases, premium wallets, modern laptop bags <br>
+                    Designed for elegance, crafted for durability
+                </p>
+                <div class="hero-buttons">
+                    <a href="#gallery"><button class="btn btn-primary">Buy Now</button></a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>High Protection</h3>
+                        <p>Shock & Scratch Resistant</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3> Premium Quality</h3>
+                        <p>Superior Materials</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Modern Design</h3>
+                        <p>Stylish & Sleek</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Slider -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop <span class="gold-text">Cuvero</span></h2>
+                <p>
+                    <strong>Click on “Shop Now / More Details” to view all products</strong>
+                </p>
+            </div>
+            
+            <div class="slider-container">
+                <div class="slider" id="image-slider">
+                    <!-- Slides will be loaded by JavaScript -->
+                </div>
+                
+                <button class="slider-btn prev-btn" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-dots" id="slider-dots">
+                    <!-- Dots will be loaded by JavaScript -->
+                </div>
+                
+                <button class="play-pause-btn" id="play-pause-btn">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2> <span class="gold-text">Cuvero </span>Top Collection</h2>
+                <p>Discover our best-selling and most loved products</p>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Custom <span class="gold-text"> Order</span></h2>
+                <p>"We’re here anytime – contact us for support or a custom order"</p>
+            </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Special order</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">e-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Submit</span>
+                        </button>
+                    </form>
+                    
+                    <div class="form-note">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>Reply to you within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="cuvero.html"><span class="brand-name">Cuvero</span></a>
+                    </div>
+                    <p>"Cuvero – Premium phone cases, genuine leather wallets and modern laptop bags,
+                         crafted with elegant design and advanced protection."</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1EehNpH6o7/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/201015767465"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/cuvero_?igsh=MWcwbmswOG5zOWU2cg=="><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+20 101 576 7465"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Top Collection</a></li>
+                        <li><a href="#gallery">Shop</a></li>
+                        <li><a href="#contact-form">Custom Order</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Cuvero All rights reserved.</p>
+                <p>
+                    Made by <strong>Ahmed Nabil</strong> 
+                    <a href="https://wa.me/201008481678" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Social Share Menu -->
+    <div class="social-share-menu">
+        <button class="share-main-btn" id="share-main-btn">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        
+        <div class="share-options" id="share-options">
+            <button class="share-btn copy-link" id="copy-link-btn" title="نسخ الرابط">
+                <i class="fas fa-link"></i>
+            </button>
+            <button class="share-btn facebook" onclick="shareOnFacebook()" title="فيسبوك">
+                <i class="fab fa-facebook"></i>
+            </button>
+            <button class="share-btn whatsapp" onclick="shareOnWhatsApp()" title="واتساب">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            <button class="share-btn telegram" onclick="shareOnTelegram()" title="تيليجرام">
+                <i class="fab fa-telegram"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Copy Notification -->
+    <div class="copy-notification" id="copy-notification">
+       Link copied!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
